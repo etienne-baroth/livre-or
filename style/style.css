@@ -1,0 +1,136 @@
+/* PAGE EN GENERAL */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #ECEBE4;
+}
+
+
+/* NAVBAR HEADER */
+
+header {
+    background-color: #8D86C9;
+}
+
+.head_nav {
+    display: flex;
+    align-items: center;
+}
+
+.head_logo {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.head_btn {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+
+/* FORMULAIRE INSCRIPTION */
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#submit_btn {
+    margin-top: 10px;
+}
+
+.error {
+    text-align: center;
+    color: #FC7A57;
+}
+
+
+/* TEXTE */
+
+p {
+    padding: 10px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #FC7A57;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FC7A57;
+}
+
+
+/* ADMIN */
+
+.adminTable {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    border: 2px solid #FC7A57;
+    text-align: center;
+}
+
+td {
+    border: 2px solid #FC7A57;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 460px) {
+    .head_btn {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .head_btn {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .head_logo {
+        width: 80px;
+        height: 80px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    input {
+        width: 50%;
+    }
+}
