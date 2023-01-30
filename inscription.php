@@ -3,7 +3,7 @@
 require_once('config.php');
 
 $error = "";
-
+$error2 ="";
 
 if(isset($_POST['submit'])) {
 
@@ -20,6 +20,9 @@ if(isset($_POST['submit'])) {
 
                 header('Location: connexion.php');
             }
+        }
+        else {
+            $error2 = "Veuillez rentrer des informations correctes";
         }
     }
     else {
@@ -64,6 +67,9 @@ if(isset($_POST['submit'])) {
 
 <div class="error">
 <?php echo $error; ?>
+</div>
+<div class="error2">
+<?php echo $error2; ?>
 </div>
 
 </main>

@@ -29,7 +29,7 @@ if(isset($_POST['submit'])) {
             "login" => $user["login"]
         ];
 
-        header('Location: profil.php');
+        header('Location: livre-or.php');
         // var_dump($_SESSION);
 
     }

@@ -2,6 +2,8 @@
 
 require_once('config.php');
 
+// var_dump($_SESSION);
+
 $getUser = $database->prepare('SELECT* FROM utilisateurs');
 
 $getUser->execute();
@@ -49,6 +51,8 @@ if(isset($_POST["submit"])) {
         <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
     </div></a>
     <div class="head_btn">
+        <p><a href="livre-or.php">Livre d'Or</a></p>
+        <p><a href="commentaire.php">Commentaires</a></p>
         <p><a href="logout.php">Déconnexion</a></p>
     </div>
 </div>

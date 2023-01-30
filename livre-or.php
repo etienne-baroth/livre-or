@@ -1,3 +1,16 @@
+<?php
+
+require_once('config.php');
+
+// var_dump($_SESSION);
+
+$getUser = $database->query("SELECT login, commentaire, date FROM commentaires INNER JOIN utilisateurs ON utilisateurs.id = commentaires.id_utilisateur ORDER BY date DESC");
+
+$livreor = $getUser->fetchAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,6 +21,42 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+
+<header>
+<div class="head_nav">
+    <a href="index.php"><div class="head_logo">
+        <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
+    </div></a>
+    <div class="head_btn">
+        <p><a href="commentaire.php">Commentaires</a></p>
+        <p><a href="profil.php">Modifier Profil</a></p>
+        <p><a href="logout.php">Déconnexion</a></p>
+    </div>
+</div>
+</header>
+
+<h1>Le fil de commentaires du livre d'or</h1>
+
+<?php
+
+foreach($livreor as $livredor): ?>
+
+<div class="livreorTable">
+<table>
+    <tr>
+        <th>Utilisateur</th>
+        <th>Date</th>
+        <th>Commentaire</th>
+    </tr>
+    <tr>
+        <td><?php echo $livredor["login"]; ?></td>
+        <td><?php echo $livredor["date"]; ?></td>
+        <td><?php echo $livredor["commentaire"]; ?></td>
+    </tr>
+</table>
+</div>
+
+<?php endforeach; ?>
+
 </body>
 </html>

@@ -2,6 +2,8 @@
 
 require_once('config.php');
 
+// var_dump($_SESSION);
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@ require_once('config.php');
 
 <main>
 
-<h1>Bienvenue sur le Livre d'Or!</h1>
+<h1>Bienvenue sur le Livre d'Or !</h1>
 
 </main>
 

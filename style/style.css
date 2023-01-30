@@ -1,11 +1,13 @@
 /* PAGE EN GENERAL */
 
-* {
-    margin: 0;
+*, ::before, ::after {
+    box-sizing: border-box;
 }
 
 body {
     background-color: #ECEBE4;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -62,6 +64,11 @@ input {
     color: #FC7A57;
 }
 
+.error2 {
+    text-align: center;
+    color: #FC7A57;
+}
+
 
 /* TEXTE */
 
@@ -86,9 +93,20 @@ h1 {
 }
 
 
-/* ADMIN */
+/* PAGE COMMENTAIRES */
 
-.adminTable {
+#commentaire {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 5px;
+    padding: 40px;
+    text-align: justify;
+}
+
+
+/* LIVRE D'OR */
+
+.livreorTable {
     display: flex;
     justify-content: center;
 }
@@ -102,7 +120,6 @@ td {
     border: 2px solid #FC7A57;
     text-align: center;
 }
-
 
 /* RESPONSIVE */
 
