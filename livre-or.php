@@ -28,9 +28,9 @@ $livreor = $getUser->fetchAll();
         <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
     </div></a>
     <div class="head_btn">
-        <p><a href="commentaire.php">Commentaires</a></p>
-        <p><a href="profil.php">Modifier Profil</a></p>
-        <p><a href="logout.php">Déconnexion</a></p>
+        <p id="btn1"><a href="commentaire.php">Commentaires</a></p>
+        <p id="btn2"><a href="profil.php">Modifier Profil</a></p>
+        <p id="btn3"><a href="logout.php">Déconnexion</a></p>
     </div>
 </div>
 </header>

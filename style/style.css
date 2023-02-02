@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #ECEBE4;
+    background-image: url("../style/img/BGimg2.jpg");
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +15,8 @@ body {
 /* NAVBAR HEADER */
 
 header {
-    background-color: #8D86C9;
+    background-color: #102824;
+    opacity: 0.9;
 }
 
 .head_nav {
@@ -39,6 +41,10 @@ header {
     margin-left: auto;
 }
 
+#btn1:hover, #btn2:hover, #btn3:hover {
+    background-color: rgba(255, 255,255, 0.2);
+}
+
 
 /* FORMULAIRE INSCRIPTION */
 
@@ -61,12 +67,12 @@ input {
 
 .error {
     text-align: center;
-    color: #FC7A57;
+    color: #2A3F33;
 }
 
 .error2 {
     text-align: center;
-    color: #FC7A57;
+    color: white;
 }
 
 
@@ -75,23 +81,26 @@ input {
 label {
     text-align: center;
     margin-top: 5px;
-    color: #FC7A57;
+    color: #2A3F33;
 }
 
 #TitreProfil {
     font-size: 24px;
 }
 
+
 /* TEXTE */
 
 p {
     padding: 10px;
     text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 a {
     text-decoration: none;
-    color: #FC7A57;
+    color: white;
 }
 
 h1 {
@@ -101,7 +110,7 @@ h1 {
     margin-right: 10%;
     margin-top: 30px;
     margin-bottom: 20px;
-    color: #FC7A57;
+    color: #2A3F33;
 }
 
 
@@ -119,6 +128,7 @@ h1 {
     font-size: 24px;
 }
 
+
 /* LIVRE D'OR */
 
 .livreorTable {
@@ -128,15 +138,18 @@ h1 {
 
 table {
     border-collapse: collapse;
+    width: 70%;
+    table-layout: fixed;
+    color: black;
+    background-color: white;
+    opacity: 0.9;
 }
 
 th,td {
-    border: 2px solid #FC7A57;
+    border: 2px solid black;
     text-align: center;
-    table-layout: fixed;
-    width: 25vw;
-    vertical-align: middle;
 }
+
 
 /* RESPONSIVE */
 
@@ -148,6 +161,7 @@ th,td {
     }
     h1 {
         font-size: 20px;
+        color: white;
     }
 }
 
@@ -163,6 +177,7 @@ th,td {
     }
     h1 {
         font-size: 16px;
+        color: white;
     }
     input {
         width: 50%;

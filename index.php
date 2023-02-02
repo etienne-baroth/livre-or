@@ -25,13 +25,13 @@ require_once('config.php');
     <div class="head_btn">
         <?php 
         if(isset($_SESSION["utilisateur"]["login"])) {
-            echo '<p><a href="livre-or.php">Livre d\'Or</a></p>';
-            echo '<p><a href="commentaire.php">Commentaires</a></p>';
-            echo '<p><a href="logout.php">Déconnexion</a></p>';
+            echo '<p id="btn1"><a href="livre-or.php">Livre d\'Or</a></p>';
+            echo '<p id="btn2"><a href="commentaire.php">Commentaires</a></p>';
+            echo '<p id="btn3"><a href="logout.php">Déconnexion</a></p>';
         }
         else {
-        echo '<p><a href="connexion.php">Se connecter</a></p>';
-        echo '<p><a href="inscription.php">Nouveau compte</a></p>';
+        echo '<p id="btn1"><a href="connexion.php">Se connecter</a></p>';
+        echo '<p id="btn2"><a href="inscription.php">Nouveau compte</a></p>';
         } ?>
     </div>
 </div>

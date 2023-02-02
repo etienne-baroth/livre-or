@@ -87,7 +87,7 @@ if(isset($_POST['submit'])) {
         <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
     </div></a>
     <div class="head_btn">
-        <p><a href="inscription.php">Nouveau compte</a></p>
+        <p id="btn1"><a href="inscription.php">Nouveau compte</a></p>
     </div>
 </div>
 </header>
