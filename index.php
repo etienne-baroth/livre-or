@@ -23,15 +23,23 @@ require_once('config.php');
         <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
     </div></a>
     <div class="head_btn">
-        <p><a href="connexion.php">Se connecter</a></p>
-        <p><a href="inscription.php">Nouveau compte</a></p>
+        <?php 
+        if(isset($_SESSION["utilisateur"]["login"])) {
+            echo '<p><a href="livre-or.php">Livre d\'Or</a></p>';
+            echo '<p><a href="commentaire.php">Commentaires</a></p>';
+            echo '<p><a href="logout.php">Déconnexion</a></p>';
+        }
+        else {
+        echo '<p><a href="connexion.php">Se connecter</a></p>';
+        echo '<p><a href="inscription.php">Nouveau compte</a></p>';
+        } ?>
     </div>
 </div>
 </header>
 
 <main>
 
-<h1>Bienvenue sur le Livre d'Or !</h1>
+<h1>Bienvenue sur le Livre d'Or <?php if (isset($_SESSION["utilisateur"]["login"])) {echo $_SESSION["utilisateur"]["login"];} ?> !</h1>
 
 </main>
 

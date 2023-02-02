@@ -70,6 +70,18 @@ input {
 }
 
 
+/* MODIFICATION PROFIL */
+
+label {
+    text-align: center;
+    margin-top: 5px;
+    color: #FC7A57;
+}
+
+#TitreProfil {
+    font-size: 24px;
+}
+
 /* TEXTE */
 
 p {
@@ -85,8 +97,8 @@ a {
 h1 {
     text-align: center;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 30px;
     margin-bottom: 20px;
     color: #FC7A57;
@@ -103,6 +115,9 @@ h1 {
     text-align: justify;
 }
 
+#TitreCommentaire {
+    font-size: 24px;
+}
 
 /* LIVRE D'OR */
 
@@ -111,14 +126,16 @@ h1 {
     justify-content: center;
 }
 
-th {
-    border: 2px solid #FC7A57;
-    text-align: center;
+table {
+    border-collapse: collapse;
 }
 
-td {
+th,td {
     border: 2px solid #FC7A57;
     text-align: center;
+    table-layout: fixed;
+    width: 25vw;
+    vertical-align: middle;
 }
 
 /* RESPONSIVE */

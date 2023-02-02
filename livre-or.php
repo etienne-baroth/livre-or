@@ -44,13 +44,13 @@ foreach($livreor as $livredor): ?>
 <div class="livreorTable">
 <table>
     <tr>
+        <th>Posté le</th>
         <th>Utilisateur</th>
-        <th>Date</th>
         <th>Commentaire</th>
     </tr>
     <tr>
-        <td><?php echo $livredor["login"]; ?></td>
         <td><?php echo $livredor["date"]; ?></td>
+        <td><?php echo $livredor["login"]; ?></td>
         <td><?php echo $livredor["commentaire"]; ?></td>
     </tr>
 </table>

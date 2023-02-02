@@ -58,7 +58,7 @@ if(isset($_POST["submit"])) {
 </div>
 </header>
 
-<h1>Ecrivez un commentaire</h1>
+<h1 id="TitreCommentaire">Bienvenue dans la section commentaires <?php echo $_SESSION["utilisateur"]["login"] ?>. Vous pouvez ajouter un nouveau commentaire ici</h1>
 
 <form class="form" method="post" action="">
     <input id="commentaire" type="text" name="commentaire" placeholder="Votre commentaire" autocomplete="off">
