@@ -23,7 +23,7 @@ require_once('config.php');
 <header>
 <div class="head_nav">
     <a href="index.php"><div class="head_logo">
-        <img class="logo" src="style/img/logo.png" alt ="logo voyage désert">
+        <img class="logo" src="style/img/logo.png" alt ="logo voyage">
     </div></a>
     <div class="head_btn">
         <?php 
@@ -42,7 +42,7 @@ require_once('config.php');
 
 <main>
 
-<h1>Bienvenue sur le Livre d'Or <?php if (isset($_SESSION["utilisateur"]["login"])) {echo $_SESSION["utilisateur"]["login"];} ?> !</h1>
+<h1>Bienvenue sur le Livre d'Or <?php if (isset($_SESSION["utilisateur"]["login"])) {echo $_SESSION["utilisateur"]["login"];} ?> ! Vous pouvez accéder au GitHub du site <a href="https://github.com/etienne-baroth" target="_blank"> ici</a></h1>
 
 </main>
 
