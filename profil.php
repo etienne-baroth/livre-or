@@ -51,7 +51,7 @@ if(isset($_POST["submit"])) {
 <header>
 <div class="head_nav">
     <a href="index.php"><div class="head_logo">
-        <img class="logo" src="style/img/logo.png" alt ="logo voyage">
+        <img class="logo" src="img/logo.png" alt ="logo voyage">
     </div></a>
     <div class="head_btn">
         <p id="btn1"><a href="livre-or.php">Livre d'Or</a></p>
