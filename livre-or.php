@@ -18,6 +18,9 @@ $livreor = $getUser->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livre d'Or</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -34,6 +37,8 @@ $livreor = $getUser->fetchAll();
     </div>
 </div>
 </header>
+
+<main>
 
 <h1>Le fil de commentaires du livre d'or</h1>
 
@@ -57,6 +62,12 @@ foreach($livreor as $livredor): ?>
 </div>
 
 <?php endforeach; ?>
+
+</main>
+
+<footer>
+    
+</footer>
 
 </body>
 </html>

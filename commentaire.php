@@ -41,6 +41,9 @@ if(isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commentaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -58,6 +61,8 @@ if(isset($_POST["submit"])) {
 </div>
 </header>
 
+<main>
+
 <h1 id="TitreCommentaire">Bienvenue dans la section commentaires <?php echo $_SESSION["utilisateur"]["login"] ?>. Vous pouvez ajouter un nouveau commentaire ici</h1>
 
 <form class="form" method="post" action="">
@@ -65,6 +70,11 @@ if(isset($_POST["submit"])) {
     <input id="submit_btn" type="submit" name="submit" value="Validation">
 </form>
 
+</main>
+
+<footer>
+    
+</footer>
 
 </body>
 </html>

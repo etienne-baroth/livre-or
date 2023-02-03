@@ -4,14 +4,38 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("../style/img/BGimg2.jpg");
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+*::selection {
+    background-color: hsla(165, 89%, 31%, 1);
 }
 
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lobster', cursive;
+}
+
+main {
+    padding: 20px 50px;
+    flex-grow: 1;
+    background: hsla(165, 89%, 31%, 1);
+    background: linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(165, 89%, 31%, 1) 0%, hsla(161, 46%, 49%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#43B692", GradientType=1 );
+}
+
+footer {
+    padding: 80px 0;
+    background-image: url("../style/img/Bgimg.jpg");
+    background-size: cover;
+}
+  
 /* NAVBAR HEADER */
 
 header {
@@ -25,20 +49,23 @@ header {
 }
 
 .head_logo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin-right: auto;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .logo {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 .head_btn {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    margin-right: 15px;
 }
 
 #btn1:hover, #btn2:hover, #btn3:hover {
@@ -53,6 +80,7 @@ header {
     flex-direction: column;
 }
 
+
 input {
     position: relative;
     margin-left: auto;
@@ -63,6 +91,7 @@ input {
 
 #submit_btn {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .error {
@@ -142,13 +171,17 @@ table {
     table-layout: fixed;
     color: black;
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 th,td {
     border: 2px solid black;
     text-align: center;
 }
+
+td {
+    color: hsla(165, 89%, 31%, 1);
+    };
 
 
 /* RESPONSIVE */
@@ -161,7 +194,10 @@ th,td {
     }
     h1 {
         font-size: 20px;
-        color: white;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -172,14 +208,17 @@ th,td {
         font-size: 10px;
     }
     .head_logo {
-        width: 80px;
-        height: 80px;
+        width: 30px;
+        height: 30px;
     }
     h1 {
         font-size: 16px;
-        color: white;
     }
     input {
         width: 50%;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
